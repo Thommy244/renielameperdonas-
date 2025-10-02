@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Me perdonas Reniela????</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    h1 {
+      color: purple;
+    }
+    #contador {
+      font-size: 20px;
+      margin: 20px;
+      color: darkred;
+    }
+    button {
+      background-color: hotpink;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: deeppink;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Me perdonas Reniela???</h1>
+
+  <p>number of times I apologized</p>
+  <div id="contador">0</div>
+
+  <button onclick="sumar()">Apologies</button>
+
+  <script>
+    let contador = 0;
+    function sumar() {
+      contador++;
+      document.getElementById("contador").innerText = contador;
+    }
+  </script>
+
+</body>
+</html>
